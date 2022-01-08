@@ -10,6 +10,27 @@ In the third and last project there are miltiple server-monitors and only one cl
 
 ## Bash script:
 
+This bash script creates a test input filecalled "inputFile.txt".
+
+The input file will contain a number of citizen vaccination records about different viruses, in the following order:
+`citizenId firstName lastName country age virusName isVaccinated dateVaccinated`
+
+For example, <br/>
+    `125 Jason Dupont USA 76 H1N1 YES 30-10-2020`<br/>
+    `889 John Papadopoulos Greece 52 Η1Ν1 ΝΟ`
+    
+### Create the input file:
+    bash ./script_1/testFile.sh info/virusesFile.txt info/countriesFile.txt numLines duplicatesOn
+
+Where **numLines** equals with the number of linesthat will be in the "inputFile.txt" and **duplicatesOn** = 1 if duplicate citizenIDs are allowed, or 0 if citizenIDs are unique.
+
+The **virusesFile.txt**, located in the info directory, contains a list of 20 different viruses that can be modified as you wish. Same way with the **countriesFile.txt**.
+
+## Bash script: create_infiles.sh
+
+This bash script reads the inputFile.txt and creates a directory that contains subdirectories, one for each country name that exists in the inputFile. In each subdirectory, there are  **numFilesPerDirectory** files with names **country-n.txt**, where n is a positive integer. 
+
+
 ## Execution:
 
 To run the program there is a makefile which compiles the files in an executable named travelMonitorClient. Once an executable file has been created, we call it with the command:
