@@ -13,10 +13,6 @@ This bash script creates a test input filecalled "inputFile.txt".
 
 The input file will contain a number of citizen vaccination records about different viruses, in the following order:
 `citizenId firstName lastName country age virusName isVaccinated dateVaccinated`
-
-For example, <br/>
-    `125 Jason Dupont USA 76 H1N1 YES 30-10-2020`<br/>
-    `889 John Papadopoulos Greece 52 Η1Ν1 ΝΟ`
     
 ### Create the input file:
     bash ./testFile.sh virusesFile.txt countriesFile.txt numLines duplicatesOn
