@@ -7,7 +7,11 @@ For the implementation of the first project there is a [bloom filter](https://en
 While for the second project there are two new files Monitor and travelMonitor that will act as the server and client. For the connection and synchronization of these two it uses FIFO pipes and signals to send data from one file to another.
 <br/>
 In the third and last project there are miltiple server-monitors and only one client-travelMonitor which connect via POSIX threads and sockets.
-
+<br/>
+For every project there is a detailed README into each folder. The READMEs are in greek so please feel free to contact me if you need any further information at [LinkedIn](https://www.linkedin.com/in/apostolos-karvelas-91279b192/).
+<br/>
+<br/>
+Here is a quick summory of the final implementation.
 ## Bash script testfile.sh:
 This bash script creates a test input filecalled "inputFile.txt".
 
